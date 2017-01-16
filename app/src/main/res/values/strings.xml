@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ÜDraw</string>
+    <string name="connect">Se connecter</string>
+    <string name="createAccount">Créer un compte</string>
+    <string name="infoId">Pseudo ou adresse de connexion</string>
+    <string name="infoPwd">Mot de passe</string>
+    <string name="errorOnEmptyFields">Tous les champs obligatoires ne sont pas remplis.</string>
+    <string name="searchUserVideo">Rechercher un utilisateur ou le titre d\'une vidéo</string>
+    <string name="IOError">Un fichier de configuration n\'a pas pu être ouvert.</string>
+    <string name="AuthorizationRequired">Vous n\'avez pas donné l\'autorisation pour l\'utilisation de votre caméra.</string>
+    <string name="devMode">Le mode développeur est activé. Vous n\'aurez pas accès aux informations de votre compte habituel en vous connectant.</string>
+    <string name="confirmMdp">Confirmation du mot de passe</string>
+    <string name="titleCreateAccount">Création de votre compte</string>
+    <string name="errorOnConnexion">Désolé, nous n\'avons pas pu vous connecter à l\'application ÜDraw</string>
+</resources>

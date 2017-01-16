@@ -1,0 +1,47 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom"
+    android:layout_weight="0.02"
+    android:background="#bc6c6467">
+
+    <ImageButton
+        android:id="@+id/accueil"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/home"
+        android:onClick="goToHome"/>
+
+    <ImageButton
+        android:id="@+id/browse"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/loupe"
+        android:onClick="goToSearch"/>
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/camera"
+        android:onClick="goToCamera"/>
+
+    <ImageButton
+        android:id="@+id/actus"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/love" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/profile"
+        android:onClick="goToProfile"/>
+
+</TableRow>

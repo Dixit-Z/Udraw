@@ -3,7 +3,7 @@
     android:layout_height="50dp"
     android:layout_gravity="bottom"
     android:layout_weight="0.02"
-    android:background="#bc6c6467">
+    android:background="#fcfcfc">
 
     <ImageButton
         android:id="@+id/accueil"

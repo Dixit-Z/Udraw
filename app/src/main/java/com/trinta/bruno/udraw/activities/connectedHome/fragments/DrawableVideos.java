@@ -48,9 +48,7 @@ public class DrawableVideos extends Fragment {
         //Appel avec les vidéos non traitées (ici images)
         DrawableVideosTimelineAdaptater videoTimeLineAdaptater = new DrawableVideosTimelineAdaptater(getActivity(), R.layout.listview_video_raw, listUntreated);
 
-        View header = (View) getActivity().getLayoutInflater().inflate(R.layout.listview_header_row, null);
         listViewVideos = (ListView) V.findViewById(R.id.listViewDrawableVideos);
-        listViewVideos.addHeaderView(header);
         listViewVideos.setAdapter(videoTimeLineAdaptater);
         listViewVideos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -59,7 +57,7 @@ public class DrawableVideos extends Fragment {
                 if (videoContent.getHolder().getPostVideoContent().isPlaying()) {
                     videoContent.getHolder().getPostVideoContent().pause();
                     videoContent.getHolder().getPostVideoContent().seekTo(0);
-                    videoContent.getHolder().getPostVideoContent().setBackground(AppCompatResources.getDrawable(getActivity(), R.drawable.playbackground));
+                    videoContent.getHolder().getPostVideoContent().setBackgroundResource(R.drawable.playbackground);
                 } else {
                     videoContent.getHolder().getPostVideoContent().start();
                     videoContent.getHolder().getPostVideoContent().setBackground(null);

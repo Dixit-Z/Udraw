@@ -46,9 +46,7 @@ public class DrawnVideos extends Fragment {
         //Appelle de l'adaptateur avec la liste des vidéos déssinées
         DrawnVideosTimelineAdaptater videoTimeLineAdaptater = new DrawnVideosTimelineAdaptater(getActivity(), R.layout.listview_video_drawn, listUntreated);
 
-        View header = (View) getActivity().getLayoutInflater().inflate(R.layout.listview_header_row, null);
         listViewVideos = (ListView) V.findViewById(R.id.listViewDrawnVideos);
-        listViewVideos.addHeaderView(header);
         listViewVideos.setAdapter(videoTimeLineAdaptater);
 
         listViewVideos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -58,7 +56,7 @@ public class DrawnVideos extends Fragment {
                 if (videoContent.getHolder().getPostVideoContent().isPlaying()) {
                     videoContent.getHolder().getPostVideoContent().pause();
                     videoContent.getHolder().getPostVideoContent().seekTo(0);
-                    videoContent.getHolder().getPostVideoContent().setBackground(AppCompatResources.getDrawable(getActivity(), R.drawable.playbackground));
+                    videoContent.getHolder().getPostVideoContent().setBackgroundResource(R.drawable.playbackground);
                 } else {
                     videoContent.getHolder().getPostVideoContent().start();
                     videoContent.getHolder().getPostVideoContent().setBackground(null);
